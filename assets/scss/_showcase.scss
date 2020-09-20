@@ -1,0 +1,367 @@
+
+
+.showcase-area {
+
+  h1.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15.5854px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+  }
+
+  .left-wrapper {
+    
+
+    .row {
+      padding-right: 45px;
+      border-right: 1px solid $border-color;
+
+      @media #{$lg} {
+        padding-right: 0;
+        border-right: none;
+      }
+      @media #{$md} {
+        padding-right: 0;
+        border-right: none;
+      }
+      @media #{$xs} {
+        padding-right: 0;
+        border-right: none;
+      }
+
+      .col-lg-6 {
+        padding: 0 9px;
+      }
+    }
+  }
+
+  .single-product {
+    background: $white;
+    padding: 17px;
+    margin-bottom: 15px;
+    border-radius: 1.75px;
+
+    .product-active {
+      margin-bottom: 5px;
+      position: relative;
+
+      .product-image {
+        text-align: center;
+        margin: auto;
+
+        img {
+          margin: auto;
+        }
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        display: flex;
+        z-index: 9;
+
+
+        li {
+
+          button {
+            text-indent: -9999px;
+            border: none;
+            width: 8px;
+            height: 8px;
+            background: #BDBDBD;
+            border-radius: 30px;
+            margin: 0 2px;
+
+            @include transition(.3s);
+          }
+
+          &.slick-active {
+            button {
+              background: #3B3B3B;
+            }
+          }
+        }
+      }
+    }
+
+
+    .info-meta {
+
+      span {
+        font-weight: 600;
+        font-size: 12.122px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #A8B3BE;
+      }
+
+      h3 {
+
+        a {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 23px;
+          letter-spacing: 0.02em;
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    .review-meta {
+      display: flex;
+      align-items: center;
+
+      @media #{$xs} {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @media #{$sm} {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .review-left {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+
+        .stars {
+          margin-right: 5px;
+
+          i {
+            font-size: 12px;
+            color: #FFA73F;
+          }
+        }
+
+        .text {
+          p {
+            font-weight: 400;
+            font-size: 12.9878px;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .review-right {
+        a {
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+
+          i {
+            margin-right: 2px;
+            font-size: 14px;
+            color: #A8B3BE;
+          }
+
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+
+    .price-meta {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+
+      @media #{$xs} {
+        flex-direction: column;
+      }
+      @media #{$sm} {
+        flex-direction: row;
+      }
+
+      h3 {
+        font-size: 15.5854px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+      }
+      span {
+        font-size: 11.2561px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: #576066;
+      }
+
+      a {
+        font-weight: 600;
+        font-size: 12.122px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 6px 0;
+        display: block;
+        border-radius: 6px;
+        margin-top: 4px;
+      }
+
+      .price-left {
+        margin-right: 15px;
+        width: 100%;
+
+        a {
+          color: #068C3C;
+          background: rgba(35, 199, 110, 0.05);
+          border: 0.865854px dashed #23C76E;
+        }
+      }
+
+      .price-right {
+        width: 100%;
+
+        a {
+          color: #FF8717;
+          background: rgba(255, 180, 35, 0.05);
+          border: 0.865854px dashed #FFB423;
+        }
+      }
+
+    }
+
+    .action-meta {
+      margin-top: 8px;
+
+      a {
+        display: block;
+        background: #FFFFFF;
+        border: 0.865854px solid #E5E5E5;
+        font-weight: 600;
+        font-size: 12.122px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #007BFF;
+        text-align: center;
+        padding: 10px 30px;
+      }
+    }
+
+    .header {
+
+      display: flex;
+
+      .info-meta {
+
+        span {
+          font-size: 12.122px;
+          line-height: 18px;
+        }
+
+        h3 {
+          a {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      .review-meta {
+        .review-left {
+
+          .stars {
+
+            i {
+              font-size: 10px;
+              letter-spacing: -1px;
+            }
+          }
+
+          .text {
+            p {
+              font-size: 9.8556px;
+              line-height: 15px;
+
+
+              span {
+
+              }
+            }
+          }
+        }
+
+        .review-right {
+
+          a {
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+
+            i {
+              margin-right: 2px;
+              font-size: 12px;
+              color: #A8B3BE;
+
+              span {
+
+              }
+            }
+          }
+        }
+      }
+
+      .product-image {
+        max-width: 95px;
+        width: 100%;
+        height: 95px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+
+      @media #{$xs} {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @media #{$sm} {
+        flex-direction: row;
+      }
+
+      .price-meta {
+        margin-top: 0;
+
+        @media #{$xs} {
+          flex-direction: row;
+          margin-bottom: 10px;
+        }
+
+        a {
+          padding: 9px 10px;
+        }
+      }
+
+      .action-meta {
+        margin-top: 0;
+        margin-left: 16px;
+
+        @media #{$xs} {
+          margin-left: 0;
+        }
+        @media #{$sm} {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
